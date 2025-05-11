@@ -11,13 +11,13 @@ interface PhotoInfo {
 const photos: PhotoInfo[] = [
   {
     id: 1,
-    url: "https://images.pexels.com/photos/5473950/pexels-photo-5473950.jpeg",
+    url: "https://images.pexels.com/photos/5417678/pexels-photo-5417678.jpeg",
     title: "Astroloji Nedir?",
     description: "Astroloji, gök cisimlerinin konumlarının insan yaşamı üzerindeki etkilerini inceleyen kadim bir bilimdir. Doğum haritanız, yaşam yolculuğunuzda size rehberlik edebilir."
   },
   {
     id: 2,
-    url: "https://images.pexels.com/photos/7887800/pexels-photo-7887800.jpeg",
+    url: "https://images.pexels.com/photos/6510878/pexels-photo-6510878.jpeg",
     title: "Burçlar ve Elementler",
     description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
   },
