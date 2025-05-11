@@ -9,23 +9,23 @@ interface PhotoInfo {
 }
 
 const photos: PhotoInfo[] = [
-  {
+    {
     id: 1,
-    url: "https://i.imgur.com/wCzFL8u.jpeg",
-    title: "Doğum Haritası",
-
+    url: "https://i.imgur.com/hQNeM5l.jpeg",
+    title: "Genel Bilgilendirme",
+   // description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
   },
   {
-    id: 2,
+      id: 2,
     url: "https://i.imgur.com/KA0PyEd.jpeg",
     title: "Ücret Bilgisi",
 //    description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
   },
   {
     id: 3,
-    url: "https://i.imgur.com/hQNeM5l.jpeg",
-    title: "Genel Bilgilendirme",
-   // description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
+    url: "https://i.imgur.com/wCzFL8u.jpeg",
+    title: "Doğum Haritası",
+
   },
   {
     id: 4,
