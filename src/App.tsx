@@ -9,10 +9,8 @@ function App() {
   const [showAppointment, setShowAppointment] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
-      return (
-        localStorage.getItem('darkMode') === 'true' ||
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-      );
+      return localStorage.getItem('darkMode') === 'true' ||
+        window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
     return false;
   });
@@ -26,15 +24,17 @@ function App() {
     localStorage.setItem('darkMode', darkMode.toString());
   }, [darkMode]);
 
-  return (
-    <div className="relative min-h-screen">
-      {/* Background Image Layer */}
-      <div className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat transition-all duration-300 
-                      bg-[url('https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpg')] 
-                      dark:bg-[url('https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg')]">
-      </div>
+  const backgroundStyle = {
+    backgroundImage: darkMode
+      ? 'url("https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg")'
+      : 'url("https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpg")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  };
 
-      {/* Foreground Layer */}
+  return (
+    <div className="min-h-screen transition-colors duration-200" style={backgroundStyle}>
       <div className="min-h-screen bg-white/80 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 relative">
