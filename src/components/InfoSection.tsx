@@ -12,8 +12,8 @@ const photos: PhotoInfo[] = [
   {
     id: 1,
     url: "https://i.imgur.com/wCzFL8u.jpeg",
-    title: "Astroloji Nedir?",
-    description: "Astroloji, gök cisimlerinin konumlarının insan yaşamı üzerindeki etkilerini inceleyen kadim bir bilimdir. Doğum haritanız, yaşam yolculuğunuzda size rehberlik edebilir."
+    title: "Doğum Haritası",
+
   },
   {
     id: 2,
