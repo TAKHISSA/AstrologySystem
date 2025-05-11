@@ -17,7 +17,7 @@ const photos: PhotoInfo[] = [
   },
   {
     id: 2,
-    url: "https://images.pexels.com/photos/7887800/pexels-photo-7887800.jpeg",
+    url: "https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg",
     title: "Burçlar ve Elementler",
     description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
   },
