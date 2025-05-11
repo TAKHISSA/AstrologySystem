@@ -40,7 +40,7 @@ export function MonthlyCalendar({ selectedDate, onDateSelect }: CalendarProps) {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 transition-colors duration-200">
+    <div className="bg-white/90 dark:bg-gray-800/90 rounded-lg shadow-lg p-6 backdrop-blur-sm transition-colors duration-200">
       <div className="flex justify-between items-center mb-4">
         <button
           onClick={() => setCurrentMonth(subMonths(currentMonth, 1))}
