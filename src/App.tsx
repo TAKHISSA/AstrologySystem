@@ -35,7 +35,8 @@ function App() {
 
   return (
     <div className="min-h-screen transition-colors duration-200" style={backgroundStyle}>
-      <div className="min-h-screen bg-white/80 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
+<div className="min-h-screen bg-gray-50/90 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
+
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 relative">
             <button
