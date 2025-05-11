@@ -11,7 +11,7 @@ interface PhotoInfo {
 const photos: PhotoInfo[] = [
   {
     id: 1,
-    url: "https://drive.google.com/file/d/1HKt-QuN8D3AC6l03w6eEVdFg1a2LEkA2/view?usp=sharing",
+    url: "https://images.app.goo.gl/Y5sTchW1uTA3XNPL8",
     title: "Astroloji Nedir?",
     description: "Astroloji, gök cisimlerinin konumlarının insan yaşamı üzerindeki etkilerini inceleyen kadim bir bilimdir. Doğum haritanız, yaşam yolculuğunuzda size rehberlik edebilir."
   },
