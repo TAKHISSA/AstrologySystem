@@ -17,21 +17,21 @@ const photos: PhotoInfo[] = [
   },
   {
     id: 2,
-    url: "https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg",
-    title: "Burçlar ve Elementler",
-    description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
+    url: "https://i.imgur.com/KA0PyEd.jpeg",
+    title: "Ücret Bilgisi",
+//    description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
   },
   {
     id: 3,
-    url: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg",
-    title: "Gezegenlerin Etkileri",
-    description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
+    url: "https://i.imgur.com/hQNeM5l.jpeg",
+    title: "Genel Bilgilendirme",
+   // description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
   },
   {
     id: 4,
-    url: "https://images.pexels.com/photos/6510876/pexels-photo-6510876.jpeg",
-    title: "Doğum Haritası",
-    description: "Doğum haritanız, doğduğunuz an gökyüzünün size özel bir fotoğrafıdır. Bu harita, potansiyellerinizi ve yaşam yolculuğunuzu anlamanıza yardımcı olur."
+    url: "https://i.imgur.com/h8oX5Tw.jpeg",
+    title: "Diğer Analizler",
+ //   description: "Doğum haritanız, doğduğunuz an gökyüzünün size özel bir fotoğrafıdır. Bu harita, potansiyellerinizi ve yaşam yolculuğunuzu anlamanıza yardımcı olur."
   }
 ];
 
