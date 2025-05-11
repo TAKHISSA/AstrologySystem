@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { MonthlyCalendar } from './components/Calendar';
 import { AstrologerInfo } from './components/AstrologerInfo';
 import { Star, Sun, Moon } from 'lucide-react';
+import { InfoSection } from './components/InfoSection';
 
 function App() {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
+  const [showAppointment, setShowAppointment] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('darkMode') === 'true' ||
@@ -34,7 +36,7 @@ function App() {
   return (
     <div className="min-h-screen transition-colors duration-200" style={backgroundStyle}>
       <div className="min-h-screen bg-white/80 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 relative">
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -53,25 +55,41 @@ function App() {
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Astroloji Danışmanlık
             </h1>
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
-              Yıldızların rehberliğinde, kendi yolunuzu keşfedin
-            </p>
-            <p className="text-gray-600 dark:text-gray-400 mb-2">
-              Pazartesi'den Çarşamba'ya kadar randevu alabilirsiniz.
-              Her gün için tek randevu mevcuttur.
-            </p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Not: Randevu oluşturduktan sonra size gelen maile en geç 7 gün içerisinde 'Randevumu onaylıyorum' şeklinde cevap vermeniz gerekir yoksa randevunuz silinir.
-            </p>
+            <div className="flex justify-center gap-4 mt-8">
+              <button
+                onClick={() => setShowAppointment(false)}
+                className={`px-6 py-3 rounded-lg transition-all duration-200 ${
+                  !showAppointment
+                    ? 'bg-indigo-600 text-white'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                }`}
+              >
+                Bilgilendirme
+              </button>
+              <button
+                onClick={() => setShowAppointment(true)}
+                className={`px-6 py-3 rounded-lg transition-all duration-200 ${
+                  showAppointment
+                    ? 'bg-indigo-600 text-white'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                }`}
+              >
+                Randevu Al
+              </button>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <MonthlyCalendar
-              selectedDate={selectedDate}
-              onDateSelect={setSelectedDate}
-            />
-            <AstrologerInfo selectedDate={selectedDate} />
-          </div>
+          {showAppointment ? (
+            <div className="grid md:grid-cols-2 gap-6">
+              <MonthlyCalendar
+                selectedDate={selectedDate}
+                onDateSelect={setSelectedDate}
+              />
+              <AstrologerInfo selectedDate={selectedDate} />
+            </div>
+          ) : (
+            <InfoSection />
+          )}
         </div>
       </div>
     </div>
