@@ -17,7 +17,7 @@ const photos: PhotoInfo[] = [
   },
   {
     id: 2,
-    url: "https://nz.pinterest.com/pin/elementler--313633561561872872/",
+    url: "https://www.google.com/search?client=opera&hs=l8S&sca_esv=c2f32dff1ef2c84c&sxsrf=AHTn8zppfJYkpHPQJfB0Xng7cH9m4S_IEw:1746958548658&q=bur%C3%A7lar+ve+elementler&udm=2&fbs=ABzOT_AeWVZgM1ygG9loIv1sab0j2HB687sEni7_6XgT5zHBckD9kgTOns_F_8zP5-_OFTzMCAw6YxtSkRw_LAMnAnB7OFJxvyP7GYQS59yKfC5zQz42wLErcSWUhufzSV5yMOw7MzhU21NBcRcxpBIm5gO5PoqxxuZbWf4lwurwlkyuM12uxe5dahaCSInmzWMFIZkJTrVVwisx6wHk3lsABIm_IpywqCHSFMc8R-bh5DquOq40RS6zoYUUPG43a7sDGlZm8Fe4&sa=X&ved=2ahUKEwjnu-vdl5uNAxWjS_EDHeF0OEkQtKgLegQIDxAB&biw=1468&bih=803&dpr=2#vhid=WVvZ_otIZCRuyM&vssid=mosaic:~:text=Resmin%20i%C3%A7inde%20ara-,Elementler%20ve%20Denge%20Kurma%20%E2%80%93%20Ugenist,-Git",
     title: "Burçlar ve Elementler",
     description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
   },
