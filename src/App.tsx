@@ -30,13 +30,16 @@ function App() {
       : 'url("https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    position: 'relative' as const,
   };
 
   return (
     <div className="min-h-screen transition-colors duration-200" style={backgroundStyle}>
-<div className="min-h-screen bg-gray-50/90 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
+      {/* Overlay katmanı */}
+      <div className="absolute inset-0 bg-white/30 dark:bg-black/30 backdrop-blur-sm z-0" />
 
+      <div className="min-h-screen relative z-10 bg-gray-50/90 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 relative">
             <button
@@ -53,7 +56,7 @@ function App() {
             <div className="flex items-center justify-center mb-4">
               <Star className="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
               Astroloji Danışmanlık
             </h1>
             <div className="flex justify-center gap-4 mt-8">
@@ -62,7 +65,7 @@ function App() {
                 className={`px-6 py-3 rounded-lg transition-all duration-200 ${
                   !showAppointment
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300'
                 }`}
               >
                 Bilgilendirme
@@ -72,7 +75,7 @@ function App() {
                 className={`px-6 py-3 rounded-lg transition-all duration-200 ${
                   showAppointment
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300'
                 }`}
               >
                 Randevu Al
