@@ -27,7 +27,7 @@ function App() {
   const backgroundStyle = {
     backgroundImage: darkMode
       ? 'url("https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg")'
-      : 'url("https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg")',
+      : 'url("https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
