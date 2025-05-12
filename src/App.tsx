@@ -1,4 +1,3 @@
-Şunu dedin:
 import React, { useState, useEffect } from 'react';
 import { MonthlyCalendar } from './components/Calendar';
 import { AstrologerInfo } from './components/AstrologerInfo';
