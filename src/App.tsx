@@ -1,3 +1,4 @@
+Şunu dedin:
 import React, { useState, useEffect } from 'react';
 import { MonthlyCalendar } from './components/Calendar';
 import { AstrologerInfo } from './components/AstrologerInfo';
@@ -37,7 +38,7 @@ function App() {
   return (
     <div className="min-h-screen transition-colors duration-200" style={backgroundStyle}>
       {/* Overlay katmanı */}
-      <div className="absolute inset-0 bg-white/30 dark:bg-black/30  z-0" />
+      <div className="absolute inset-0 bg-white/30 dark:bg-black/30 backdrop-blur-sm z-0" />
 
       <div className="min-h-screen relative z-10 bg-gray-50/90 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
@@ -70,21 +71,21 @@ function App() {
             <div className="flex justify-center gap-4 mt-8">
               <button
                 onClick={() => setShowAppointment(false)}
-                className={`px-6 py-3 rounded-lg transition-all duration-200 ${
+                className={px-6 py-3 rounded-lg transition-all duration-200 ${
                   !showAppointment
                     ? 'bg-indigo-600 text-white'
                     : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300'
-                }`}
+                }}
               >
                 Bilgilendirme
               </button>
               <button
                 onClick={() => setShowAppointment(true)}
-                className={`px-6 py-3 rounded-lg transition-all duration-200 ${
+                className={px-6 py-3 rounded-lg transition-all duration-200 ${
                   showAppointment
                     ? 'bg-indigo-600 text-white'
                     : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300'
-                }`}
+                }}
               >
                 Randevu Al
               </button>
