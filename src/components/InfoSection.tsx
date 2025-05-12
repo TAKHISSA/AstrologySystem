@@ -13,25 +13,25 @@ const photos: PhotoInfo[] = [
     id: 1,
     url: "https://i.imgur.com/hQNeM5l.jpeg",
     title: "Genel Bilgilendirme",
-    description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
+ //   description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
   },
   {
     id: 2,
     url: "https://i.imgur.com/KA0PyEd.jpeg",
     title: "Ücret Bilgisi",
-    description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
+//    description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
   },
   {
     id: 3,
     url: "https://i.imgur.com/wCzFL8u.jpeg",
     title: "Doğum Haritası",
-    description: "Doğum haritanız, doğduğunuz an gökyüzünün size özel bir fotoğrafıdır. Bu harita, potansiyellerinizi ve yaşam yolculuğunuzu anlamanıza yardımcı olur."
+   // description: "Doğum haritanız, doğduğunuz an gökyüzünün size özel bir fotoğrafıdır. Bu harita, potansiyellerinizi ve yaşam yolculuğunuzu anlamanıza yardımcı olur."
   },
   {
     id: 4,
     url: "https://i.imgur.com/h8oX5Tw.jpeg",
     title: "Diğer Analizler",
-    description: "Astroloji, yaşamınızdaki döngüleri ve potansiyel fırsatları anlamanıza yardımcı olur. Size özel analizlerle yolunuzu aydınlatın."
+   // description: "Astroloji, yaşamınızdaki döngüleri ve potansiyel fırsatları anlamanıza yardımcı olur. Size özel analizlerle yolunuzu aydınlatın."
   }
 ];
 
