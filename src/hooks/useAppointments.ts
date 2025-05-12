@@ -32,9 +32,8 @@ export function useAppointments() {
     }
   }
 
-  async function createAppointment(appointmentDate: Date, name: string, email: string) {
+  async function createAppointment(appointmentDate: Date, name: string, email: string, phone?: string) {
     try {
-      // Format the date in YYYY-MM-DD format using the actual selected date
       const formattedDate = format(appointmentDate, 'yyyy-MM-dd');
       
       const { error } = await supabase
@@ -43,12 +42,12 @@ export function useAppointments() {
           appointment_date: formattedDate,
           client_name: name,
           client_email: email,
+          phone_number: phone,
           status: 'scheduled'
         });
 
       if (error) throw error;
 
-      // Refresh the booked dates
       await fetchAppointments();
       return { success: true };
     } catch (err) {

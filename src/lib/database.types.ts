@@ -8,6 +8,7 @@ export interface Database {
           appointment_date: string;
           client_name: string;
           client_email: string;
+          phone_number?: string;
           status: 'scheduled' | 'cancelled' | 'completed';
         };
         Insert: {
@@ -16,6 +17,7 @@ export interface Database {
           appointment_date: string;
           client_name: string;
           client_email: string;
+          phone_number?: string;
           status?: 'scheduled' | 'cancelled' | 'completed';
         };
         Update: {
@@ -24,6 +26,7 @@ export interface Database {
           appointment_date?: string;
           client_name?: string;
           client_email?: string;
+          phone_number?: string;
           status?: 'scheduled' | 'cancelled' | 'completed';
         };
       };

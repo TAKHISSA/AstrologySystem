@@ -9,29 +9,29 @@ interface PhotoInfo {
 }
 
 const photos: PhotoInfo[] = [
-    {
+  {
     id: 1,
     url: "https://i.imgur.com/hQNeM5l.jpeg",
     title: "Genel Bilgilendirme",
-   // description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
+    description: "Gezegenler, astrolojide farklı yaşam alanlarını temsil eder. Her gezegenin kendine özgü enerjisi ve etkisi vardır."
   },
   {
-      id: 2,
+    id: 2,
     url: "https://i.imgur.com/KA0PyEd.jpeg",
     title: "Ücret Bilgisi",
-//    description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
+    description: "Her burç, dört elementten birine aittir: Ateş, Toprak, Hava ve Su. Bu elementler, kişilik özelliklerimizi ve yaşam enerjimizi şekillendirir."
   },
   {
     id: 3,
     url: "https://i.imgur.com/wCzFL8u.jpeg",
     title: "Doğum Haritası",
-
+    description: "Doğum haritanız, doğduğunuz an gökyüzünün size özel bir fotoğrafıdır. Bu harita, potansiyellerinizi ve yaşam yolculuğunuzu anlamanıza yardımcı olur."
   },
   {
     id: 4,
     url: "https://i.imgur.com/h8oX5Tw.jpeg",
     title: "Diğer Analizler",
- //   description: "Doğum haritanız, doğduğunuz an gökyüzünün size özel bir fotoğrafıdır. Bu harita, potansiyellerinizi ve yaşam yolculuğunuzu anlamanıza yardımcı olur."
+    description: "Astroloji, yaşamınızdaki döngüleri ve potansiyel fırsatları anlamanıza yardımcı olur. Size özel analizlerle yolunuzu aydınlatın."
   }
 ];
 
@@ -61,24 +61,26 @@ export function InfoSection() {
 
       {selectedPhoto && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full p-6 relative">
+          <div className="bg-white dark:bg-gray-800 rounded-lg max-w-4xl w-full p-6 relative">
             <button
               onClick={() => setSelectedPhoto(null)}
               className="absolute right-4 top-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
             >
               <X className="w-6 h-6" />
             </button>
-            <img
-              src={selectedPhoto.url}
-              alt={selectedPhoto.title}
-              className="w-full h-64 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              {selectedPhoto.title}
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300 text-lg">
-              {selectedPhoto.description}
-            </p>
+            <div className="flex flex-col items-center">
+              <img
+                src={selectedPhoto.url}
+                alt={selectedPhoto.title}
+                className="w-full max-h-[70vh] object-contain rounded-lg mb-4"
+              />
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                {selectedPhoto.title}
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300 text-lg text-center max-w-2xl">
+                {selectedPhoto.description}
+              </p>
+            </div>
           </div>
         </div>
       )}
