@@ -36,10 +36,10 @@ function App() {
 
   return (
     <div className="min-h-screen transition-colors duration-200" style={backgroundStyle}>
-      {/* Overlay katmanı */}
-      <div className="absolute inset-0 bg-white/30 dark:bg-black/30 backdrop-blur-sm z-0" />
+      {/* Overlay katmanının opaklığını azalttık */}
+      <div className="absolute inset-0 bg-white/20 dark:bg-black/30 backdrop-blur-sm z-0" />
 
-      <div className="min-h-screen relative z-10 bg-gray-50/90 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
+      <div className="min-h-screen relative z-10 bg-gray-50/80 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 relative">
             <button
