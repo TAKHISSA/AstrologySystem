@@ -19,7 +19,7 @@ export function AppointmentModal({ selectedDate, onClose, onSubmit }: Appointmen
 
   const handleSubmit = async () => {
     if (!name || !email) {
-      alert('Lütfen ad ve e-posta alanlarını doldurun!');
+      alert('Lütfen ad alanını doldurun!');
       return;
     }
 
