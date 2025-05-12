@@ -36,10 +36,10 @@ function App() {
 
   return (
     <div className="min-h-screen transition-colors duration-200" style={backgroundStyle}>
-      {/* Overlay katmanı */}
-      <div className="absolute inset-0 bg-white/30 dark:bg-black/30 backdrop-blur-sm z-0" />
+      {/* Overlay katmanı - opaklık azaltıldı */}
+      <div className="absolute inset-0 bg-white/10 dark:bg-black/20 backdrop-blur-[2px] z-0" />
 
-      <div className="min-h-screen relative z-10 bg-gray-50/90 dark:bg-black/80 py-12 px-4 backdrop-blur-sm">
+      <div className="min-h-screen relative z-10 bg-transparent py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 relative">
             <button
@@ -65,7 +65,7 @@ function App() {
                 className={`px-6 py-3 rounded-lg transition-all duration-200 ${
                   !showAppointment
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300'
+                    : 'bg-gray-200/80 dark:bg-gray-700/80 text-gray-800 dark:text-gray-300'
                 }`}
               >
                 Bilgilendirme
@@ -75,7 +75,7 @@ function App() {
                 className={`px-6 py-3 rounded-lg transition-all duration-200 ${
                   showAppointment
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300'
+                    : 'bg-gray-200/80 dark:bg-gray-700/80 text-gray-800 dark:text-gray-300'
                 }`}
               >
                 Randevu Al
