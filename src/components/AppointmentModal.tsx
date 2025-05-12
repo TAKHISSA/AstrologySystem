@@ -18,8 +18,12 @@ export function AppointmentModal({ selectedDate, onClose, onSubmit }: Appointmen
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async () => {
-    if (!name || !email) {
+    if (!name) {
       alert('Lütfen ad alanını doldurun!');
+      return;
+    }
+    if(!email){
+       alert('Lütfen email alanını doldurun!');
       return;
     }
 
