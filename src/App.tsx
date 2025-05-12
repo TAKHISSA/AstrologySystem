@@ -14,7 +14,6 @@ function App() {
     }
     return false;
   });
-
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
