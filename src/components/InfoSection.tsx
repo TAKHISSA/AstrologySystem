@@ -16,7 +16,7 @@ const photos: PhotoInfo[] = [
   },
   {
     id: 2,
-    url: "https://i.imgur.com/KA0PyEd.jpeg",
+    url: "https://i.imgur.com/Aqy4y8h.jpegg",
     title: "Ücret Bilgisi"
   },
   {
