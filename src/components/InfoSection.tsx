@@ -21,7 +21,7 @@ const photos: PhotoInfo[] = [
   },
   {
     id: 3,
-    url: "https://i.imgur.com/wCzFL8u.jpeg",
+    url: "https://i.imgur.com/eMDzZ5a.jpeg",
     title: "Doğum Haritası"
   },
   {
