@@ -11,7 +11,7 @@ interface PhotoInfo {
 const photos: PhotoInfo[] = [
   {
     id: 1,
-    url: "https://i.imgur.com/pmxpbhA.jpeg",
+    url: "https://i.imgur.com/XNo9Sm7.jpeg",
     title: "Genel Bilgilendirme"
   },
   {
